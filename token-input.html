@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h3 {
+            margin-bottom: 15px;
+        }
+        input {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        p {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3>Masukkan Token:</h3>
+    <input type="text" id="tokenInput" placeholder="Masukkan token" />
+    <button onclick="submitToken()">Submit</button>
+    <p id="result"></p>
+</div>
+
+<script>
+// Simpan token yang telah dihasilkan
+let storedToken = "FcIzVwF1W7ecxNm";  // contoh token
+let isTokenUsed = false;  // Menyimpan status apakah token sudah digunakan atau belum
+
+// Fungsi untuk memeriksa token yang dimasukkan pengguna
+function validateToken(inputToken) {
+    if (isTokenUsed) {
+        return "Token sudah digunakan dan tidak dapat digunakan lagi.";
+    }
+    
+    if (inputToken === storedToken) {
+        isTokenUsed = true;  // Tandai token sebagai sudah digunakan
+        return "Token valid. Anda bisa melanjutkan.";
+    } else {
+        return "Token tidak valid. Coba lagi.";
+    }
+}
+
+// Simulasi input token dari pengguna
+function submitToken() {
+    const userInputToken = document.getElementById("tokenInput").value;
+    const result = validateToken(userInputToken);
+    
+    document.getElementById("result").textContent = result;
+
+    // Jika token valid, redirect ke halaman berikutnya
+    if (result === "Token valid. Anda bisa melanjutkan.") {
+        setTimeout(function() {
+            window.location.href = "https://wa.me/6282181080023?text=Bg+Mana+Panelku";  // Ganti dengan URL halaman berikutnya
+        }, 500);  // Tunggu 1 detik sebelum mengalihkan
+    } else {
+      window.location.href = "link-lain.html"
+    }
+}
+</script>
+
+</body>
+</html>

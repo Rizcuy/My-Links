@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('c79eb745008638dc71f5b023837996f4.jpg'); /* Path ke gambar background */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85); /* Warna latar belakang dengan sedikit transparansi */
+    background-image: url('foto1.jp');
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+a {
+    display: block;
+    margin: 1pc 0;
+    padding: 1pc;
+    width:12pc;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 50pc;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Sedikit memperbesar tautan saat hover */
+}
+
+a:active {
+    transform: scale(0.95); /* Sedikit memperkecil tautan saat klik */
+}
+
+button {
+  background: none;
+  transform: translate(120px, 20px);
+}
+
+.Page-2 {
+  background-color: skyblue; /* Warna latar belakang hijau */
+  color: white; /* Warna teks putih */
+  padding: 2px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Animasi transisi untuk perubahan warna */
+}
+
+.Page-2:hover {
+  background-color: blue; /* Warna latar belakang berubah saat hover */
+}
+
+a img {
+    width: 20px; /* Sesuaikan ukuran gambar */
+    height: 20px;
+    margin-left: -70px; /* Jarak antara gambar dan teks */
+    margin-right: 50px;
+    margin-bottom: -2%;
+} 
+
+.donasi {
+  color: blue;
+  background-color: palegreen;
+}
+
+.donasi:hover{
+  background-color :lawngreen ;
+}
+
+.wa {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('wa.jpg'); /* Path ke gambar background */
+    background-size: 250px;
+    background-position: center;
+}
+
+.wa:hover{
+  color:white ;
+  background-color: lawngreen ;
+}
+
+.tt {
+  color: white;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('tiktok.png'); /* Path ke gambar background */
+    background-size: 250px;
+    background-position: center;
+} 
+
+.ig{
+  box-shadow: 0px 0px 10px deeppink;
+}
+.yt{
+  box-shadow: 0px 0px 10px red;
+}
+.wa{
+  box-shadow: 0px 0px 10px lawngreen;
+}
+.tele{
+  box-shadow: 0px 0px 10px skyblue;
+}
+.tt{
+  box-shadow: 0px 0px 10px cyan;
+}
+.tt:hover{
+  color:black;
+  background-color:white;
+}
+
+.wa, .tt,.ig,.yt,.donasi,.tele{
+  -webkit-text-stroke: 0.4px black;
+}
+
+.yt {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('yt.png'); /* Path ke gambar background */
+    background-size: 150px;
+    background-position: center;
+}
+
+.tele{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('tele.jpg'); /* Path ke gambar background */
+    background-size: 220px;
+    background-position: center;
+}
+
+.ig{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('ig.jpg'); /* Path ke gambar background */
+    background-size: 180px;
+    background-position: center; 
+}
+
+.container{
+  box-shadow:0px 0px 15px cyan;
+}
+
+#secret{
+  display: grid;
+    margin: 1px 0;
+    padding: 1px;
+    width:31px;
+    font-size: 0.1px;
+    color: white;
+    background-color: transparent;
+}
+
+#secret {
+  transform: translate(100px, 50px);
+}
